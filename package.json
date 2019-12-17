@@ -1,0 +1,47 @@
+{
+  "name": "serverless-mongodb-test",
+  "version": "1.0.0",
+  "description": "Serverless Lambda to ping CertGround",
+  "scripts": {
+    "lint": "eslint --color ./app"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.7.5",
+    "@babel/core": "7.7.5",
+    "@babel/plugin-proposal-export-namespace-from": "7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.7.4",
+    "@babel/plugin-proposal-throw-expressions": "7.7.4",
+    "@babel/plugin-syntax-dynamic-import": "7.7.4",
+    "@babel/plugin-transform-runtime": "7.7.5",
+    "@babel/preset-env": "7.7.5",
+    "babel-eslint": "10.0.3",
+    "babel-loader": "8.0.6",
+    "babel-plugin-ramda": "2.0.0",
+    "eslint": "6.7.2",
+    "eslint-config-airbnb-base": "14.0.0",
+    "eslint-plugin-import": "2.18.2",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "prettier": "1.19.1",
+    "rimraf": "3.0.0",
+    "serverless-offline": "5.12.1",
+    "serverless-pseudo-parameters": "2.5.0",
+    "serverless-webpack": "5.3.1",
+    "webpack": "4.35.2",
+    "webpack-node-externals": "1.6.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "author": "Sean Paul Campbell <sean.campbell13@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "2.585.0",
+    "axios": "0.19.0",
+    "jsonwebtoken": "8.5.1",
+    "ramda": "0.26.1",
+    "uuid": "3.3.3"
+  }
+}
